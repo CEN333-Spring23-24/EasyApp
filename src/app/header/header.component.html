@@ -1,0 +1,11 @@
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <p class="pure-menu-heading"> {{title}} </p>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"> <a href="" class="pure-menu-link">Main Menu</a></li>
+            <li *ngFor="let feature of features" class="pure-menu-item"> 
+                <a href="{{feature2path(feature)}}" class="pure-menu-link">{{feature}}</a>
+            </li>
+        </ul>
+    </div>
+  </div>
