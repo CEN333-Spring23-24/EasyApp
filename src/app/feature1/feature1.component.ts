@@ -20,13 +20,13 @@ export class Feature1Component {
     "Toyota",
     "2013",
     "http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg",
-    "good"
+    "It seems like you're encountering an issue with property binding in Angular. To properly bind the properties inside the <app-card> component, you should remove the curly braces {{ }} from the property bindings within the parent component. The curly braces are used for interpolation in template strings but are not necessary when binding to properties."
     )
     let car2 = new car(
       "Nissan",
       "2023",
       "http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg",
-      "bad"
+      "It seems like you're encountering an issue with property binding in Angular. To properly bind the properties inside the <app-card> component, you should remove the curly braces {{ }} from the property bindings within the parent component. The curly braces are used for interpolation in template strings but are not necessary when binding to properties."
       )
     this.list.push(car1);
     this.list.push(car2);

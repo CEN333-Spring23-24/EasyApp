@@ -1,12 +1,13 @@
-<div class="posts pure-u-1-1">
+<div class="cardstyle posts pure-u-1-1">
     <section class="post">
         <header class="post-header">
             <h2 class="post-title">{{header}}    </h2>
-            <p class="post-meta">  {{subheader}} </p>
+            <h3 class="post-meta">  {{subheader}} </h3>
         </header>
         <div class="post-description">
-            <p> <ng-content></ng-content> </p>
-            <img class="pure-img pure-u-1-1" style="padding: 1em" src="{{image}}"/>
+            <ng-content></ng-content>   
         </div>
+        <br>
+        <img class="imagestyle pure-img pure-u-1-1" src="{{image}}"/>
     </section>
 </div>
