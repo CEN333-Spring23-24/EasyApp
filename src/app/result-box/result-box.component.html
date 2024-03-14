@@ -1,0 +1,17 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+<div [ngClass]="boxClass" class="posts pure-u-1-1 is-center">
+    <section class="post">
+        <header class="post-header">
+            <h2 class="post-title">
+                <i *ngIf="boxClass === 'warning'" class="fas fa-exclamation-triangle"></i>
+                <i *ngIf="boxClass === 'error'" class="fas fa-times-circle"></i>
+                <i *ngIf="boxClass === 'success'" class="fas fa-check-circle"></i>
+                {{label}}: <ng-content></ng-content> 
+            </h2>
+        </header>
+        <div class="post-description">
+            <h4>{{message}} </h4>
+        </div>
+    </section>
+</div>

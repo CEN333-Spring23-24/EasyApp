@@ -1,0 +1,26 @@
+<app-container>
+    <app-one-column-form>
+        <app-input label="Input 1 (Auto-calculate): " placeholder="" [(inputValue)]="input1" (inputValueChange)="calc_auto()" 
+        type="number"></app-input>
+
+        <app-input label="Input 2 (Auto-calculate): " placeholder="" [(inputValue)]="input2" (inputValueChange)="calc_auto()" 
+        type="number"></app-input>
+        
+    </app-one-column-form>
+
+    <app-result-box label="Result" boxClass={{getClassFromValueA(outputA)}} [message]="messageA">{{outputA}}</app-result-box>
+
+</app-container>
+
+
+
+    <!-- <app-one-column-form>
+        <app-input label="Input 3 (Event calculate): " placeholder="" [(inputValue)]="input3" type="number"></app-input>
+
+        <app-input label="Input 4 (Event calculate): " placeholder="" [(inputValue)]="input4" type="number"></app-input>
+
+        <button type="button" class="pure-button" (click)="calc_event()">Calculate</button>
+
+    </app-one-column-form>
+    <app-result-box label="Result" boxClass={{getClassFromValueB(outputB)}} [message]="messageB">{{outputB}}</app-result-box>
+ -->
